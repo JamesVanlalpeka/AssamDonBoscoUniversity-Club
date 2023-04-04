@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  
+}
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.open-button:hover {
+  transition-duration: 0.1s;
+  background-color:#B0DDE4;
+  color: white;
+}
+
+
+
+
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 10%;
+  
+  margin-bottom: auto;
+  margin-top: auto;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 3;
+  overflow: hidden;
+  
+}
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+.formContainer input,select {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: none;
+  background: #eee;
+}
+
+.formContainer select{
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #8ebf42;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  background-color: #df4c73;
+}
